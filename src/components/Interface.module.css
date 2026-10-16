@@ -1,0 +1,486 @@
+.welcome {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.intro {
+  padding: clamp(32px, 6vw, 90px);
+  background: #edf0fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand strong {
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+.logo {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  border-radius: 15px 15px 15px 4px;
+  background: linear-gradient(140deg, #408bff, #7755e9);
+  color: #fff;
+  font-size: 27px;
+  font-weight: 800;
+}
+.integration {
+  font-size: 12px;
+  border-left: 1px solid #ced3e4;
+  padding-left: 12px;
+  color: #697386;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+  color: #66718b;
+}
+.intro h1 {
+  font-size: clamp(32px, 3.4vw, 54px);
+  line-height: 1.15;
+  font-weight: 650;
+  letter-spacing: -2px;
+  margin: 25px 0;
+}
+.lead {
+  color: #626c81;
+  font-size: 17px;
+  max-width: 400px;
+}
+.steps {
+  display: grid;
+  gap: 23px;
+  color: #7964cf;
+  font-size: 12px;
+}
+.steps b {
+  margin-left: 17px;
+  font-size: 14px;
+  color: #4f5b73;
+  font-weight: 500;
+}
+.connection {
+  display: grid;
+  place-items: center;
+  padding: 40px;
+  background: #fff;
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+}
+.badge {
+  background: #f0edfc;
+  color: #6652bd;
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.card h2 {
+  margin: 24px 0 8px;
+  font-size: 27px;
+  letter-spacing: -0.8px;
+}
+.card > p {
+  color: #697386;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+.card a {
+  font-size: 12px;
+}
+.card form > small {
+  margin-top: -12px;
+  font-size: 11px;
+}
+.primary {
+  background: #6852d7;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+.primary:hover:not(:disabled) {
+  background: #5740c1;
+}
+.secondary {
+  border: 1px solid #dce0eb;
+  background: #fff;
+  border-radius: 9px;
+  padding: 10px 14px;
+  color: #505d74;
+  font-size: 12px;
+}
+.secondary:hover {
+  background: #f1effb;
+}
+.notice {
+  font-size: 11px;
+  color: #697386;
+  margin: 0;
+}
+.card .privacy {
+  font-size: 11px;
+  margin: 20px 0;
+}
+.error,
+.sendError,
+.pollError {
+  background: #fff0ed;
+  color: #9a362c;
+  font-size: 12px;
+  border-radius: 8px;
+  padding: 12px;
+  overflow-wrap: anywhere;
+}
+.error {
+  margin: 0;
+}
+.workspace {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  height: 100dvh;
+  max-width: 1600px;
+  margin: auto;
+  background: #fff;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 24px;
+  border-right: 1px solid #e6e9f1;
+  overflow: auto;
+}
+.sidebar .eyebrow {
+  font-size: 8px;
+  margin-top: 24px;
+}
+.sidebar h2 {
+  margin: 20px 0 25px;
+  font-size: 22px;
+}
+.sidebar form {
+  gap: 13px;
+}
+.sidebar form small {
+  font-size: 11px;
+  margin-top: -7px;
+}
+.selectedChat {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-radius: 12px;
+  background: #f0edfc;
+  padding: 16px 12px;
+  margin-top: 25px;
+}
+.selectedChat strong {
+  font-size: 13px;
+}
+.selectedChat small {
+  display: block;
+  font-size: 11px;
+  margin-top: 4px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #dcd5f7;
+  color: #6650b8;
+  font-size: 13px;
+}
+.sidebarBottom {
+  margin-top: auto;
+  padding-top: 30px;
+}
+.sidebarBottom p {
+  font-size: 12px;
+}
+.sidebarBottom small {
+  display: block;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+.dot {
+  display: inline-block;
+  background: #289b78;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.conversation {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f5f6fa;
+}
+.chatHeader {
+  padding: 22px 32px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e9f1;
+}
+.chatHeader h1 {
+  margin: 0;
+  font-size: 16px;
+}
+.chatHeader p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  color: #697386;
+}
+.messages {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 20px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sessionNote {
+  align-self: center;
+  background: #e9ecf3;
+  padding: 5px 12px;
+  border-radius: 20px;
+  color: #778197;
+  font-size: 10px;
+}
+.bubble {
+  max-width: min(80%, 620px);
+  padding: 12px 16px 9px;
+  border-radius: 14px;
+  box-shadow: 0 2px 3px #26354b05;
+}
+.bubble p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 0;
+  font-size: 14px;
+}
+.bubble footer {
+  font-size: 9px;
+  text-align: right;
+  margin-top: 6px;
+  color: #697386;
+}
+.incoming {
+  align-self: flex-start;
+  background: #fff;
+  border-bottom-left-radius: 4px;
+}
+.outgoing {
+  align-self: flex-end;
+  background: #e7e2fb;
+  border-bottom-right-radius: 4px;
+}
+.empty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+}
+.emptyIcon {
+  width: 74px;
+  height: 74px;
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+  background: #eae6f9;
+  color: #7961ca;
+  font-size: 34px;
+}
+.empty h2 {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 22px 0 0;
+}
+.empty p {
+  font-size: 13px;
+  color: #788298;
+}
+.composer {
+  background: #fff;
+  padding: 20px 28px 13px;
+  border-top: 1px solid #e6e9f1;
+  gap: 10px;
+}
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.inputRow textarea {
+  border: 0;
+  resize: vertical;
+  min-height: 52px;
+  max-height: 180px;
+  padding: 12px;
+  font-size: 14px;
+}
+.inputRow button {
+  flex-shrink: 0;
+}
+.composerHint {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #7b8496;
+  font-size: 10px;
+}
+.sendError,
+.pollError {
+  margin: 10px 24px;
+}
+.pollError button {
+  margin-left: 12px;
+}
+@media (min-width: 1600px) {
+  .workspace {
+    border-left: 1px solid #e6e9f1;
+    border-right: 1px solid #e6e9f1;
+  }
+}
+@media (max-width: 800px) {
+  .welcome {
+    grid-template-columns: 1fr;
+  }
+  .intro {
+    padding: 28px;
+    gap: 20px;
+  }
+  .intro h1 {
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+  .intro .steps,
+  .intro > small,
+  .intro .eyebrow,
+  .lead {
+    display: none;
+  }
+  .intro h1 {
+    margin: 0;
+  }
+  .connection {
+    padding: 32px 24px;
+  }
+  .workspace {
+    grid-template-columns: 250px minmax(0, 1fr);
+  }
+  .sidebar {
+    padding: 20px 16px;
+  }
+  .messages {
+    padding: 16px;
+  }
+  .chatHeader {
+    padding: 20px;
+  }
+  .composer {
+    padding: 14px;
+  }
+  .composerHint {
+    font-size: 9px;
+  }
+}
+@media (max-width: 600px) {
+  .workspace {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 100dvh;
+  }
+  .sidebar {
+    padding: 16px;
+    overflow: visible;
+    border-bottom: 1px solid #e6e9f1;
+  }
+  .sidebar .brand {
+    display: none;
+  }
+  .sidebar .eyebrow,
+  .sidebar h2,
+  .selectedChat,
+  .sidebarBottom small,
+  .sidebarBottom p {
+    display: none;
+  }
+  .sidebar form {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: 8px;
+    padding-right: 0;
+  }
+  .sidebar form small {
+    display: none;
+  }
+  .sidebar form label {
+    font-size: 11px;
+    gap: 6px;
+  }
+  .sidebar .error {
+    grid-column: 1/-1;
+  }
+  .sidebarBottom {
+    margin: 8px 0 0;
+    padding: 0;
+    align-self: flex-end;
+  }
+  .sidebarBottom button {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .conversation {
+    height: calc(100dvh - 160px);
+    min-height: 420px;
+  }
+  .chatHeader {
+    padding: 14px 18px;
+  }
+  .inputRow {
+    gap: 4px;
+  }
+  .inputRow button {
+    padding: 12px;
+    font-size: 11px;
+  }
+  .bubble {
+    max-width: 90%;
+  }
+  .composerHint span:first-child {
+    max-width: 190px;
+  }
+  .composerHint {
+    font-size: 8px;
+  }
+  .sendError,
+  .pollError {
+    margin: 8px 12px;
+  }
+}
